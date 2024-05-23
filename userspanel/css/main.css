@@ -1,0 +1,431 @@
+/*menu text-link*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+/*title fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+.tab-content .form-control:focus {
+    outline: none!important;
+    border-color: #212529;
+    box-shadow: none!important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+    transition: 0.6s;
+    background: #212529;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #f8f9fa;
+    border-radius: 50px;
+    transition: .5s all;
+}
+
+.navbar-brand span {
+    font-family: "test", sans-serif;
+}
+
+.navbar-toggler {
+    padding: 4px 6px;
+    font-size: 2rem;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 1px 1px 2px black;
+}
+
+.navbar-brand span {
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff!important;
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    font-family: 'Mulish', sans-serif;
+    padding: 5px 15px!important;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: 0.5s all;
+    font-size: 1.06rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px black;
+}
+
+.dropdown span {
+    font-family: 'Mulish', sans-serif;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+    transition: .5s all;
+}
+
+form .form-label,
+input,
+p,
+button,
+label,
+a,
+textarea {
+    font-family: 'Mulish', sans-serif;
+}
+
+.modal-title {
+    font-family: "Mulish", sans-serif;
+}
+
+.form-focus {
+    position: relative;
+}
+
+.form-focus input {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.form-focus .focus-span {
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    left: 12px;
+    transition: 0.3s all;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.form-focus .form-control:focus {
+    outline: none!important;
+    border-color: black;
+    box-shadow: none!important;
+}
+
+.form-focus input:focus+span {
+    top: -9px;
+    font-size: 12px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+
+/*Nav End*/
+
+.nav-tabs .nav-item .nav-link {
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    background-color: transparent;
+}
+
+.tab-content .tab-pane {
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.input-group-text {
+    background-color: #212529;
+    color: #f8f9fa;
+    font-family: 'Mulish', sans-serif;
+    width: 110px;
+}
+
+.social .input-group-text {
+    color: #f8f9fa;
+    font-family: 'Mulish', sans-serif;
+    width: 140px;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+/* profile */
+
+.user-img div {
+    transition: .5s all;
+    filter: grayscale(20%);
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 -1rem -1rem rgba(0, 0, 0, .175)!important;
+}
+
+.user-img:hover div {
+    transform: scale(1.07);
+    filter: grayscale(0%) saturate(1.4);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
+}
+
+
+/*user detail*/
+
+section#user_detail .user-img-detail div {
+    transition: .5s all;
+    filter: grayscale(20%);
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 -1rem -1rem rgba(0, 0, 0, .175)!important;
+}
+
+section#user_detail .user-img-detail:hover div {
+    transform: scale(1.07);
+    filter: grayscale(0%) saturate(1.4);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
+}
+
+#user_detail h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.user-img-detail i {
+    font-size: 24px;
+}
+
+.shopping p {
+    font-size: 1.1rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/*card design*/
+
+.card-container>.front,
+.back {
+    left: calc(50% - 225px);
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    color: white;
+    transition: 0.5s all;
+    transform: perspective(800px);
+    background-color: black;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.card-container:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card-container .back {
+    transform: rotateY(180deg);
+}
+
+.card-container .back h1,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #f8f9fa;
+}
+
+.back img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.back a {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-family: 'Mulish', sans-serif;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.card-container:hover .back {
+    transform: rotateY(360deg);
+}
+
+.front .card-title {
+    width: 400px;
+    position: absolute;
+    top: 48px;
+}
+
+.front .card-p {
+    width: 180px;
+    position: absolute;
+    top: calc(54%);
+}
+
+.front .card-logo {
+    left: 18px;
+    top: 100px;
+    width: 40px;
+}
+
+
+/*Footer Start*/
+
+.fast-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fast-link h4 {
+    text-align: center;
+    border-left: 3px solid white;
+    padding-left: 20px;
+    color: orangered;
+    cursor: pointer;
+    transition: .5s all;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.fast-link h4:hover {
+    border-left: 3px solid orangered;
+}
+
+.fast-link a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.fast-link a span {
+    padding: 5px 15px;
+    transition: .5s all;
+    border-radius: 4px;
+}
+
+.fast-link a:hover span {
+    background-color: black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact h4 {
+    text-align: center;
+    border-left: 3px solid white;
+    padding-left: 20px;
+    color: orangered;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    transition: .5s all;
+    font-weight: bold;
+}
+
+.contact h4:hover {
+    border-left: 3px solid orangered;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.contact a span {
+    padding: 5px 15px;
+    transition: .5s all;
+    border-radius: 4px;
+}
+
+.contact a:hover span {
+    background-color: black;
+}
+
+.top-to {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    cursor: pointer;
+    color: black;
+    transition: 0.7s all;
+}
+
+.top-to:hover {
+    box-shadow: 0 0 5px #000000;
+}
+
+.top-to i {
+    transition: 0.7s all;
+}
+
+.top-to:hover i {
+    transform: rotate(360deg) rotateY(180deg);
+    color: orangered;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+}
+
+footer .social a {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: .5s all;
+}
+
+footer .social a:hover {
+    border-color: white;
+}
+
+footer .social a i {
+    transition: .5s all;
+}
+
+footer .social a:hover i {
+    transform: scale(1.3);
+}
+
+
+/*Nav End*/
